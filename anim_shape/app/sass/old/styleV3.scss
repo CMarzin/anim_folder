@@ -1,0 +1,91 @@
+@import "_var.scss";
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.overlay_bg {
+  z-index: 10;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background:url('https://unsplash.it/1920/1080/?random');
+}
+.final_img {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  transition:1s;
+  background:linear-gradient(to right, rgba(255, 0, 0, 0) 0%, rgba(255, 0, 0, 0)), url('https://unsplash.it/1920/1080/?photo=RRNbMiPmTZY');
+}
+
+.overlay_up {
+  z-index: 100;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background:url('https://unsplash.it/1920/1080/?random');
+}
+#parallelogram_right {
+    @include para;
+    @include linear_transparent;
+    z-index: 20;
+    span {
+
+        background:url('https://unsplash.it/1920/1080/?random');
+    }
+}
+.close_video {
+    float: right;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 200px 320px 0;
+    border-color: transparent #011a67 transparent transparent;
+}
+.element_right {
+    @include para;
+    @include linear_transparent;
+    right: -10%;
+}
+#parallelogram_right_shadow {
+    @include para;
+    @include linear_transparent;
+    z-index: 20;
+    span {
+        @include span_default;
+    }
+}
+#parallelogram_left {
+    @include para_left;
+    @include linear_transparent;
+    z-index: 10;
+    span {
+        @include span_default;
+    }
+}
+.element_left {
+    @include para_left;
+    @include linear_transparent;
+}
+#parallelogram_left_shadow {
+    z-index: 20;
+    @include para_left;
+    @include linear_transparent;
+    span {
+        @include span_default;
+    }
+}
+.click {
+    top: 0px;
+    position: absolute;
+    background: #FFF;
+    z-index: 1000000000;
+}
+.back {
+    position: absolute;
+    top: 20px;
+    background: #FFF;
+    z-index: 1000000000;
+}
