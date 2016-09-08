@@ -1,0 +1,133 @@
+@import "var.scss";
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container_menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #000;
+    width: 1200px;
+    height: 800px;
+    perspective: 2000px;
+
+    // .shadow--left {
+    //   box-shadow: -10px 10px 15px 0 #cfcfcf;
+    //   background:red;
+    //   position: absolute;
+    //   height: 60%;
+    //   width: 85%;
+    //   left: 5%;
+    //   top:22%;
+    //           transform: skew(-10deg,0deg);
+    // }
+    // .shadow--right {
+    //   box-shadow: -10px 10px 15px 0 #cfcfcf;
+    //   background:blue;
+    //   position: absolute;
+    //   height: 60%;
+    //   width: 85%;
+    //   left: 5%;
+    //   top:22%;
+    // }
+
+    #part1 {
+        z-index: 100;
+        position: absolute;
+        height: 60%;
+        width: 80%;
+        overflow: hidden;
+        transform: skew(-10deg,0deg);
+        transition:0.7s ease;
+        //  box-shadow: -10px 10px 15px 0 #cfcfcf;
+        @include dot;
+        &:hover {
+          transition:0.7s ease;
+          transform: skew(-10deg,0deg) translateX(20px);
+        }
+
+        .background-part1 {
+            position: absolute;
+            left: -10%;
+            width: 100%;
+            height: 100%;
+            background: url('https://unsplash.it/960/440?image=1065') no-repeat;
+            background-size: cover;
+            transform: skew(10deg,0deg);
+        }
+
+    }
+
+    #part2 {
+        position: absolute;
+        right: 25px;
+        z-index: 90;
+        height: 60%;
+        width: 80%;
+        overflow: hidden;
+        transform: skew(-10deg,0deg) translateZ(-150px);
+        transform-style: preserve-3d;
+        transition:0.7s ease;
+
+        &:hover {
+          transition:0.7s ease;
+          transform: skew(-10deg,0deg) translateZ(-150px) translateX(20px);
+        }
+
+        .background-part2 {
+            position: absolute;
+            left: -10%;
+            width: 100%;
+            height: 100%;
+            background: url('https://unsplash.it/960/440?image=1068') no-repeat;
+            background-size: cover;
+            transform: skew(10deg,0deg);
+        }
+    }
+
+    #part3 {
+        position: absolute;
+        right: -75px;
+        z-index: 80;
+        height: 60%;
+        width: 80%;
+        overflow: hidden;
+        transform: skew(-10deg,0deg) translateZ(-300px);
+        transform-style: preserve-3d;
+
+        .background-part3 {
+            position: absolute;
+            left: -10%;
+            width: 100%;
+            height: 100%;
+            background: url('https://unsplash.it/960/440?image=1069') no-repeat;
+            background-size: cover;
+            transform: skew(10deg,0deg);
+        }
+    }
+
+    #part4 {
+        position: absolute;
+        right: -175px;
+        z-index: 70;
+        height: 60%;
+        width: 80%;
+        overflow: hidden;
+        transform: skew(-10deg,0deg) translateZ(-450px);
+        transform-style: preserve-3d;
+
+        .background-part4 {
+            position: absolute;
+            left: -10%;
+            width: 100%;
+            height: 100%;
+            background: url('https://unsplash.it/960/440?image=1056') no-repeat;
+            background-size: cover;
+            transform: skew(10deg,0deg);
+        }
+    }
+}

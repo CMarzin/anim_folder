@@ -1,0 +1,124 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.container_menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #000;
+  width: 1200px;
+  height: 800px;
+  perspective: 2000px; }
+  .container_menu #part1 {
+    z-index: 100;
+    position: absolute;
+    height: 60%;
+    width: 80%;
+    overflow: hidden;
+    transform: skew(-10deg, 0deg);
+    transition: 0.7s ease; }
+    .container_menu #part1 .dot-top--left {
+      position: absolute;
+      top: 10%;
+      left: 5%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #fff;
+      transform: skew(10deg, 0deg); }
+    .container_menu #part1 .dot-top--right {
+      position: absolute;
+      top: 10%;
+      right: 22%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #fff;
+      transform: skew(10deg, 0deg); }
+    .container_menu #part1 .dot-bottom--left {
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #fff;
+      transform: skew(10deg, 0deg); }
+    .container_menu #part1 .dot-bottom--right {
+      position: absolute;
+      bottom: 5%;
+      right: 15%;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #fff;
+      transform: skew(10deg, 0deg); }
+    .container_menu #part1:hover {
+      transition: 0.7s ease;
+      transform: skew(-10deg, 0deg) translateX(20px); }
+    .container_menu #part1 .background-part1 {
+      position: absolute;
+      left: -10%;
+      width: 100%;
+      height: 100%;
+      background: url("https://unsplash.it/960/440?image=1065") no-repeat;
+      background-size: cover;
+      transform: skew(10deg, 0deg); }
+  .container_menu #part2 {
+    position: absolute;
+    right: 25px;
+    z-index: 90;
+    height: 60%;
+    width: 80%;
+    overflow: hidden;
+    transform: skew(-10deg, 0deg) translateZ(-150px);
+    transform-style: preserve-3d;
+    transition: 0.7s ease; }
+    .container_menu #part2:hover {
+      transition: 0.7s ease;
+      transform: skew(-10deg, 0deg) translateZ(-150px) translateX(20px); }
+    .container_menu #part2 .background-part2 {
+      position: absolute;
+      left: -10%;
+      width: 100%;
+      height: 100%;
+      background: url("https://unsplash.it/960/440?image=1068") no-repeat;
+      background-size: cover;
+      transform: skew(10deg, 0deg); }
+  .container_menu #part3 {
+    position: absolute;
+    right: -75px;
+    z-index: 80;
+    height: 60%;
+    width: 80%;
+    overflow: hidden;
+    transform: skew(-10deg, 0deg) translateZ(-300px);
+    transform-style: preserve-3d; }
+    .container_menu #part3 .background-part3 {
+      position: absolute;
+      left: -10%;
+      width: 100%;
+      height: 100%;
+      background: url("https://unsplash.it/960/440?image=1069") no-repeat;
+      background-size: cover;
+      transform: skew(10deg, 0deg); }
+  .container_menu #part4 {
+    position: absolute;
+    right: -175px;
+    z-index: 70;
+    height: 60%;
+    width: 80%;
+    overflow: hidden;
+    transform: skew(-10deg, 0deg) translateZ(-450px);
+    transform-style: preserve-3d; }
+    .container_menu #part4 .background-part4 {
+      position: absolute;
+      left: -10%;
+      width: 100%;
+      height: 100%;
+      background: url("https://unsplash.it/960/440?image=1056") no-repeat;
+      background-size: cover;
+      transform: skew(10deg, 0deg); }

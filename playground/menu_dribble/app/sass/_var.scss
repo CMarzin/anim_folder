@@ -1,0 +1,45 @@
+@mixin dot {
+    .dot-top--left {
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #fff;
+        transform: skew(10deg,0deg);
+    }
+
+    .dot-top--right {
+        position: absolute;
+        top: 10%;
+        right: 22%;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #fff;
+        transform: skew(10deg,0deg);
+    }
+
+    .dot-bottom--left {
+        position: absolute;
+        bottom: 5%;
+        left: 5%;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #fff;
+        transform: skew(10deg,0deg);
+    }
+
+    .dot-bottom--right {
+        position: absolute;
+        bottom: 5%;
+        right: 15%;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #fff;
+        transform: skew(10deg,0deg);
+    }
+}
