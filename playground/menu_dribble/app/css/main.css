@@ -9,7 +9,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 3px solid #000;
-  width: 1200px;
+  width: 1500px;
   height: 800px;
   perspective: 2000px; }
   .container_menu #part1 {
@@ -18,55 +18,57 @@ body {
     height: 60%;
     width: 80%;
     overflow: hidden;
-    transform: skew(-10deg, 0deg);
     transition: 0.7s ease; }
     .container_menu #part1 .dot-top--left {
       position: absolute;
-      top: 10%;
-      left: 5%;
+      top: 15%;
+      left: 25%;
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: #fff;
-      transform: skew(10deg, 0deg); }
+      background: #fff; }
     .container_menu #part1 .dot-top--right {
       position: absolute;
-      top: 10%;
-      right: 22%;
+      top: 15%;
+      right: 10%;
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: #fff;
-      transform: skew(10deg, 0deg); }
+      background: #fff; }
     .container_menu #part1 .dot-bottom--left {
       position: absolute;
-      bottom: 5%;
-      left: 5%;
+      bottom: 10%;
+      left: 25%;
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: #fff;
-      transform: skew(10deg, 0deg); }
+      background: #fff; }
     .container_menu #part1 .dot-bottom--right {
       position: absolute;
-      bottom: 5%;
-      right: 15%;
+      bottom: 10%;
+      right: 10%;
       width: 10px;
       height: 10px;
       border-radius: 50%;
-      background: #fff;
-      transform: skew(10deg, 0deg); }
+      background: #fff; }
     .container_menu #part1:hover {
       transition: 0.7s ease;
-      transform: skew(-10deg, 0deg) translateX(20px); }
+      transform: translateX(20px); }
+    .container_menu #part1 .shape {
+      position: absolute;
+      z-index: 1;
+      left: 5%;
+      width: 100px;
+      height: 100%;
+      background: #fff;
+      transform: skew(-10deg); }
     .container_menu #part1 .background-part1 {
       position: absolute;
-      left: -10%;
+      left: 10%;
       width: 100%;
       height: 100%;
-      background: url("https://unsplash.it/960/440?image=1065") no-repeat;
-      background-size: cover;
-      transform: skew(10deg, 0deg); }
+      background: url("https://unsplash.it/960/440/?gravity=west") no-repeat;
+      background-size: cover; }
   .container_menu #part2 {
     position: absolute;
     right: 25px;
@@ -74,20 +76,27 @@ body {
     height: 60%;
     width: 80%;
     overflow: hidden;
-    transform: skew(-10deg, 0deg) translateZ(-150px);
+    transform: translateZ(-150px);
     transform-style: preserve-3d;
     transition: 0.7s ease; }
     .container_menu #part2:hover {
       transition: 0.7s ease;
-      transform: skew(-10deg, 0deg) translateZ(-150px) translateX(20px); }
+      transform: translateX(20px) translateZ(-150px); }
+    .container_menu #part2 .shape {
+      position: absolute;
+      z-index: 1;
+      left: 5%;
+      width: 100px;
+      height: 100%;
+      background: #fff;
+      transform: skew(-10deg); }
     .container_menu #part2 .background-part2 {
       position: absolute;
-      left: -10%;
+      left: 10%;
       width: 100%;
       height: 100%;
       background: url("https://unsplash.it/960/440?image=1068") no-repeat;
-      background-size: cover;
-      transform: skew(10deg, 0deg); }
+      background-size: cover; }
   .container_menu #part3 {
     position: absolute;
     right: -75px;
@@ -95,16 +104,27 @@ body {
     height: 60%;
     width: 80%;
     overflow: hidden;
-    transform: skew(-10deg, 0deg) translateZ(-300px);
-    transform-style: preserve-3d; }
+    transform: translateZ(-300px);
+    transform-style: preserve-3d;
+    transition: 0.7s ease; }
+    .container_menu #part3:hover {
+      transition: 0.7s ease;
+      transform: translateX(20px) translateZ(-300px); }
+    .container_menu #part3 .shape {
+      position: absolute;
+      z-index: 1;
+      left: 5%;
+      width: 100px;
+      height: 100%;
+      background: #fff;
+      transform: skew(-10deg); }
     .container_menu #part3 .background-part3 {
       position: absolute;
-      left: -10%;
+      left: 10%;
       width: 100%;
       height: 100%;
       background: url("https://unsplash.it/960/440?image=1069") no-repeat;
-      background-size: cover;
-      transform: skew(10deg, 0deg); }
+      background-size: cover; }
   .container_menu #part4 {
     position: absolute;
     right: -175px;
@@ -112,13 +132,24 @@ body {
     height: 60%;
     width: 80%;
     overflow: hidden;
-    transform: skew(-10deg, 0deg) translateZ(-450px);
-    transform-style: preserve-3d; }
+    transform: translateZ(-450px);
+    transform-style: preserve-3d;
+    transition: 0.7s ease; }
+    .container_menu #part4:hover {
+      transition: 0.7s ease;
+      transform: translateX(20px) translateZ(-450px); }
+    .container_menu #part4 .shape {
+      position: absolute;
+      z-index: 1;
+      left: 5%;
+      width: 100px;
+      height: 100%;
+      background: #fff;
+      transform: skew(-10deg); }
     .container_menu #part4 .background-part4 {
       position: absolute;
-      left: -10%;
+      left: 10%;
       width: 100%;
       height: 100%;
       background: url("https://unsplash.it/960/440?image=1056") no-repeat;
-      background-size: cover;
-      transform: skew(10deg, 0deg); }
+      background-size: cover; }
