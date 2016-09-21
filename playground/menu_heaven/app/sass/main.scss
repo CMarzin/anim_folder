@@ -1,0 +1,12 @@
+@import "var";
+@import "blocks/glossary";
+@import "blocks/glossary-button";
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  font-family: $prolight;
+}
