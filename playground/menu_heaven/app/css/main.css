@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'gt_walsheim_prolight';
+  src: url("../font/gt-walsheim-light-webfont.woff2") format("woff2"), url("../font/gt-walsheim-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'gt_walsheim_prolight';
+  src: url("../font/gt-walsheim-light-webfont.woff2") format("woff2"), url("../font/gt-walsheim-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+#container_glossary-page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  #container_glossary-page #glossary-page {
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 100%; }
+    #container_glossary-page #glossary-page .container_shutter_glossary {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      letter-spacing: -0.31em;
+      left: 0; }
+      #container_glossary-page #glossary-page .container_shutter_glossary .shutter_glossary {
+        width: calc(100%/8);
+        display: inline-block;
+        height: 100%;
+        transform: scaleX(0);
+        transition: 0.5s ease;
+        background-color: #343434;
+        transform-origin: right; }
+      #container_glossary-page #glossary-page .container_shutter_glossary.triggered .shutter_glossary {
+        width: calc(100%/8);
+        display: inline-block;
+        height: 100%;
+        transform: scaleX(1);
+        transition: 0.5s ease;
+        background-color: #343434;
+        transform-origin: right; }
+      #container_glossary-page #glossary-page .container_shutter_glossary .tfl {
+        transform-origin: left; }
+
+body .container_lexique .hide_shadow {
+  transform: scaleX(0);
+  transition: 0.5s ease; }
+
+body .container_lexique .tfl {
+  transform-origin: left; }
+
+.container_lexique {
+  z-index: 12;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 150px;
+  width: 70px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  transform-origin: right;
+  transition: 0.5s ease; }
+  .container_lexique .shadow_container_lexique {
+    position: absolute;
+    z-index: 13;
+    right: 0;
+    top: 0;
+    height: 150px;
+    width: 70px;
+    background-color: #343434;
+    transform: scaleX(1);
+    transition: 0.5s ease; }
+  .container_lexique .tfr {
+    transform-origin: right; }
+  .container_lexique .btn_lexique-white {
+    position: relative;
+    z-index: 14;
+    color: #fff;
+    transform: rotate(90deg); }
+  .container_lexique .btn_lexique-dark {
+    position: relative;
+    z-index: 14;
+    color: #000;
+    transform: rotate(90deg); }
+
+.dark {
+  background: #c5c5c5; }
+  .dark p {
+    color: #fff; }
+
+.white {
+  background: #fff; }
+  .white p {
+    color: #c5c5c5; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+h3 {
+  font-family: gt_walsheim_prolight; }

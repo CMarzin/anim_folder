@@ -1,0 +1,72 @@
+body {
+  .container_lexique {
+    .hide_shadow {
+      transform:scaleX(0);
+      transition: 0.5s ease;
+
+    }
+    .tfl  {
+      transform-origin: left;
+    }
+  }
+}
+
+.container_lexique {
+  z-index: 12;
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 150px;
+  width: 70px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  transform-origin: right;
+  transition: 0.5s ease;
+
+  .shadow_container_lexique {
+    position: absolute;
+    z-index: 13;
+    right: 0;
+    top: 0;
+    height: 150px;
+    width: 70px;
+    background-color: #343434;
+    transform:scaleX(1);
+    transition: 0.5s ease;
+  }
+  .tfr {
+    transform-origin: right;
+  }
+
+  .btn_lexique-white {
+    position: relative;
+    z-index: 14;
+    color: #fff;
+    transform: rotate(90deg);
+  }
+
+  .btn_lexique-dark {
+    position: relative;
+    z-index: 14;
+    color: #000;
+    transform: rotate(90deg);
+  }
+}
+
+.dark {
+  background: #c5c5c5;
+
+  p {
+    color: #fff;
+  }
+}
+
+.white {
+  background: #fff;
+
+  p {
+    color: #c5c5c5;
+  }
+}
